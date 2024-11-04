@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mudoucor2"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/background_preto"
+        android:layout_width="453dp"
+        android:layout_height="1002dp"
+        android:background="#0D0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/imagem_background_padrao"
+        android:layout_width="620dp"
+        android:layout_height="637dp"
+        android:layout_marginTop="84dp"
+        android:alpha="0.3"
+        android:background="@drawable/__sem_t_tulo_20240605130928"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_preto"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Conteúdo principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borda_verde"
+            android:orientation="vertical"
+
+            >
+
+            <!-- Toolbar com botão de menu -->
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#131313 "
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:titleTextColor="#131313" />
+
+                    <View
+                        android:id="@+id/l"
+                        android:layout_width="129dp"
+                        android:layout_height="63dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/mudoucor2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/a"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ImageView
+                android:id="@+id/SCAR_inicio"
+                android:layout_width="882dp"
+                android:layout_height="614dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/s__mudou_a_cor" />
+
+            <Button
+                android:id="@+id/botaoAbrirTelaLogin"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#175B3B"
+                android:onClick="telaLogin"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        <!-- CIMA-->
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+    <!--BAIXO-->
+    <FrameLayout
+        android:id="@+id/parte_baixo"
+        android:layout_width="478dp"
+        android:layout_height="75dp"
+        android:background="@drawable/borda_verde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borda_verde"
+            android:orientation="vertical"
+
+            >
+
+            <!-- Toolbar com botão de menu -->
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/bb"
+                        android:layout_width="449dp"
+                        android:layout_height="76dp"
+                        android:background="#131313"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:titleTextColor="#131313" />
+
+                    <View
+                        android:id="@+id/home"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="68dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/home"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.388" />
+
+                    <View
+                        android:id="@+id/logo"
+                        android:layout_width="87dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/__sem_t_tulo_20240614010719"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/bb"
+                        app:layout_constraintHorizontal_bias="0.519"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.666" />
+
+                    <View
+                        android:id="@+id/user"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="352dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/user"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--    Menu-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

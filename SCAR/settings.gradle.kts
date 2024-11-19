@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SCAR"
+rootProject.name = "scar"
 include(":app")
+ 

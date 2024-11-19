@@ -1,11 +1,15 @@
-package com.example.scar;
+package com.example.scar2;
+
 import android.os.Bundle;
-import android.view.MenuItem;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.scar.R;
+import com.google.android.material.appbar.AppBarLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 
@@ -31,9 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
 
+    }
 }
 
 
-    }
+
 
 

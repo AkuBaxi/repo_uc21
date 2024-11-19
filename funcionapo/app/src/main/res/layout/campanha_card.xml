@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#1E1E1E"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagem_campanha"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#B10000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nome_campanha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/borda_verde"
+            app:layout_constraintStart_toEndOf="@id/imagem_campanha"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/data_criacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/nome_campanha"
+            app:layout_constraintTop_toBottomOf="@id/nome_campanha" />
+
+        <TextView
+            android:id="@+id/numero_agentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/nome_campanha"
+            app:layout_constraintTop_toBottomOf="@id/data_criacao" />
+
+        <TextView
+            android:id="@+id/dm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DM:"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/nome_campanha"
+            app:layout_constraintTop_toBottomOf="@id/numero_agentes" />
+
+        <Button
+            android:id="@+id/ver_campanha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ver Campanha"
+            android:textAllCaps="false"
+            android:backgroundTint="#0C3316"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dm_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

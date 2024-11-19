@@ -1,0 +1,25 @@
+<!-- res/menu/menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_personagens"
+        android:title="Personagens"
+
+        />
+    <item
+        android:id="@+id/menu_campanhas"
+        android:title="Campanhas"
+        />
+    <item
+        android:id="@+id/menu_livro_regras"
+        android:title="Livro de Regras"
+        />
+    <item
+        android:id="@+id/menu_info"
+        android:title="Informações"
+        />
+    <item
+        android:id="@+id/menu_config"
+        android:title="Configuração"
+        />
+</menu>

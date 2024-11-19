@@ -1,0 +1,12 @@
+<!-- res/menu/menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_list"
+        android:title="Menu List"
+        />
+    <item
+        android:id="@+id/menu_list2"
+        android:title="Menu List 2"
+    />
+</menu>

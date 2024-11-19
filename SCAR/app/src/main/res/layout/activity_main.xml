@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="MainActivity">
 
     <View
         android:id="@+id/background_preto"
@@ -41,38 +41,36 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/bg"
+
+            >
 
             <!-- Toolbar com botão de menu -->
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+            <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="#131313"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
 
-                <!-- Botão de menu customizado (à direita) -->
-                <FrameLayout
-                    android:id="@+id/parte_cima"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg"
-                    app:layout_constraintBottom_toTopOf="@+id/imagem_background_padrao"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
+                    android:layout_height="wrap_content">
 
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#131313 "
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <View
-                        android:id="@+id/SCAR"
-                        android:layout_width="134dp"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/__sem_t_tulo_20240614004910" />
-                </FrameLayout>
+            </com.google.android.material.appbar.AppBarLayout>
 
-            </androidx.appcompat.widget.Toolbar>
 
         </LinearLayout>
 
@@ -82,7 +80,7 @@
 
 
 
-<!--BAIXO-->
+    <!--BAIXO-->
     <FrameLayout
         android:id="@+id/parte_baixo"
         android:layout_width="448dp"
@@ -94,7 +92,7 @@
 
     </FrameLayout>
 
-<!--    Menu-->
+    <!--    Menu-->
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -109,7 +107,6 @@
             android:layout_height="wrap_content">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </com.google.android.material.appbar.AppBarLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

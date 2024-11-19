@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/foto_idilvania"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto da Idilvania" />
+
+        <TextView
+            android:id="@+id/mensagem_texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ver_agradecimentos_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Agradecimentos"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/ver_despedida_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Despedida"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
